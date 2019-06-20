@@ -6,8 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./painel-simples.component.css']
 })
 export class PainelSimplesComponent implements OnInit {
-  @Input() titulo;
-  @Input() col;
+  @Input() titulo: string;
+  @Input() col: number;
   @Input() tipo = "info";
 
   constructor() { }
