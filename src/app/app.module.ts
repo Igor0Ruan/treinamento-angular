@@ -14,6 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { ResumoService } from './resumo/resumo.service';
 import { ConsultaService } from './consulta/consulta.service';
+import { FaturamentoComponent } from './faturamento/faturamento.component';
+import { FaturamentoService } from './faturamento/faturamento.service';
 
 @NgModule({
     declarations: [
@@ -23,7 +25,8 @@ import { ConsultaService } from './consulta/consulta.service';
         MenuLateralComponent,
         ResumoComponent,
         ConsultaComponent,
-        ConsultaPorEspecialidadeComponent
+        ConsultaPorEspecialidadeComponent,
+        FaturamentoComponent
     ],
     imports: [
         BrowserModule,
@@ -32,7 +35,8 @@ import { ConsultaService } from './consulta/consulta.service';
     ],
     providers: [
         ResumoService,
-        ConsultaService
+        ConsultaService,
+        FaturamentoService
     ],
     bootstrap: [AppComponent],
     exports: []
