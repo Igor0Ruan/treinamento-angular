@@ -5,10 +5,10 @@ import { environment } from 'src/environments/environment.prod';
 @Injectable()
 export class ResumoService {
 
-  constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient) { }
 
-  getResumo() {
-    return this.http.get(environment.apiUrl + "/resumo");
-  }
+    getResumo() {
+        return this.http.get(environment.apiUrl + "/resumo");
+    }
 
 }
