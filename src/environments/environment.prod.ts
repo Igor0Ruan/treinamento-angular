@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: false,
+  apiUrl: "http://www.devup.com.br/php/api-dashboard/api/"
 };

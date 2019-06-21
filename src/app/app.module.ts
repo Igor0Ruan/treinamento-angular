@@ -12,6 +12,8 @@ import { ConsultaPorEspecialidadeComponent } from './consulta/consulta-por-espec
 
 import { AppRoutingModule } from './app-routing.module';
 
+import { ResumoService } from './resumo/resumo.service';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -27,7 +29,9 @@ import { AppRoutingModule } from './app-routing.module';
         AppRoutingModule,
         HttpClientModule
     ],
-    providers: [],
+    providers: [
+        ResumoService
+    ],
     bootstrap: [AppComponent],
     exports: []
 })
