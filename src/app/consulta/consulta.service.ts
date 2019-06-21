@@ -3,11 +3,11 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment.prod';
 
 @Injectable()
-export class ResumoService {
+export class ConsultaService {
 
     constructor(private http: HttpClient) { }
 
-    getResumo() {
-        return this.http.get(environment.apiUrl + "/resumo");
+    getConsultas() {
+        return this.http.get(environment.apiUrl + '/consulta');
     }
 }
