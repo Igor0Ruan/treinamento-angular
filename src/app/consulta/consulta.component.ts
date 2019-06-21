@@ -10,11 +10,12 @@ export class ConsultaComponent implements OnInit, OnDestroy {
 
     consultas;
     inscricao;
+    erro;
 
     constructor(private consultaService: ConsultaService) { }
 
     ngOnInit() {
-        this.inscricao = this.consultaService.getConsultas().subscribe(consultas => this.consultas = consultas);
+        this.inscricao = this.consultaService.getConsultas().subscribe(consultas => this.consultas = consultas, erro => this.erro = true);
     }
 
     ngOnDestroy(): void {

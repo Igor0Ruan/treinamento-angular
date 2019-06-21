@@ -14,5 +14,6 @@ export class ConsultaPorEspecialidadeComponent implements OnInit {
 
   @Input() consultas: any;
   @Input() titulo: string;
+  @Input() erro: any;
 
 }
