@@ -1,3 +1,8 @@
-<app-painel-simples titulo="Consultas Marcadas nos últimos 30 dias" col="6" tipo="success">
-  <h3 class="text-center">120</h3>
-</app-painel-simples>
+<app-barra-navegacao (onToggle)="menuLateral.toggle()"></app-barra-navegacao>
+<div class="main">
+    <app-menu-lateral #menuLateral></app-menu-lateral>
+    <div class="content">
+        <router-outlet>
+        </router-outlet>
+    </div>
+</div>
